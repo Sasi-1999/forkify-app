@@ -126,7 +126,6 @@ const clearBookmarks = function () {
 
 export const uploadRecipe = async function (newRecipe, newRecipeArr) {
   try {
-    console.log(newRecipeArr);
     const ingQty = newRecipeArr
       .filter(entry => entry[0].includes('quantity'))
       .map(ing => ing[1]);
