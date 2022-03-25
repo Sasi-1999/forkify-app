@@ -132,6 +132,10 @@ const controlAddIngredients = function () {
   addIngredients.renderAddIngredient();
 };
 
+const newFeature = function () {
+  console.log('Welcome to my world');
+};
+
 const init = function () {
   recipeView.addHandlerRender(controlRecipe);
   recipeView.addHandlerUpdateServings(controlServings);
@@ -140,5 +144,6 @@ const init = function () {
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
   addIngredients.addHandlerAddIngredient(controlAddIngredients);
+  newFeature();
 };
 init();
