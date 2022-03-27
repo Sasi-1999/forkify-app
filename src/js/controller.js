@@ -16,10 +16,6 @@ import { async } from 'regenerator-runtime/runtime';
 
 ///////////////////////////////////////
 
-// if (module.hot) {
-//   module.hot.accept();
-// }
-
 const controlRecipe = async function () {
   try {
     const id = window.location.hash.slice(1);
@@ -104,7 +100,6 @@ const controlAddRecipe = async function (newRecipe, newRecipeArr) {
 
     // Upload new recipe data
     await model.uploadRecipe(newRecipe, newRecipeArr);
-    // console.log(model.state.recipe);
 
     // Render recipe
     recipeView.render(model.state.recipe);
